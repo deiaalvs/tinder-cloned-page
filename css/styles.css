@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245 247 250);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: rgb(221 225 226);
+    font-size: 1.5rem;
+    height: 44px;
+    padding: 10px 0;
+}
+
+.navbar i:nth-child(1) {
+    color: rgb(253 80 104);
+    
+}
+
+.navbar i:hover {
+    color: rgb(253 80 104);
+    cursor: pointer;
+}
+
+.container {
+    width: 95vw;
+    height: calc(100vh - 44px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-and-text {
+    background: url("../img/anne.jpg") center center/cover;
+    display: flex;
+    align-items: flex-end;
+    height: 85vh;
+    width: 98vw;
+    border-radius: 10px;
+    box-shadow: rgba(136, 136, 136, 0.77) 0px 2px 10px 0px;
+}
+
+.photo {
+    padding: 15px;
+    width: 100%;
+    color: #eee;
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(35, 34, 65, 0) 0%,
+        rgba(0, 0, 0, 0.7) 52%
+    );
+    border-radius: 10px;
+}
+
+.name-and-age {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.name-and-age h2:nth-child(2) {
+    margin-left: 10px;
+    
+}
+
+.bio {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    padding: 1rem 0;
+    transition: 500ms ease 0s;
+    
+}
+
+.action {
+    margin: 0 15px;
+    font-size: 2rem;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 134, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    width: 66px;
+}
+
+.action:hover {
+    font-size: 2.1rem;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.action:nth-child(1) {
+    color: rgb(253, 80, 104);
+}
+
+.action:nth-child(2) {
+    color: rgb(45, 177, 255);
+    height: 48px;
+    width: 48px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.action:nth-child(3) {
+    color: rgb(27, 228, 161);
+}
+
+@media (min-width: 950px) {
+    .photo-and-text {
+        width: 367px;
+        height: 100vh;
+    }
+
+    .navbar {
+        margin: auto;
+        width: 400px;
+    }
+}
