@@ -1,0 +1,1 @@
+Beginner hands-on project proposed by Imã Learning to students of their web development course. We needed to clone Tinder's main page, using HTML and responsive CSS.
